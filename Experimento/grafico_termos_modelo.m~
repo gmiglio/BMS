@@ -1,0 +1,61 @@
+addpath('Narmax_Matlab');
+
+termos = zeros(8, 1);
+
+
+l = 1;
+nu = 1;
+ny = 1;
+ne = 0;
+
+run('Nro_termos_possiveis');
+termos(1) = np;
+
+l = 2;
+nu = 1;
+ny = 1;
+ne = 0;
+
+run('Nro_termos_possiveis');
+termos(2) = np;
+
+l = 2;
+nu = 2;
+ny = 2;
+ne = 1;
+
+run('Nro_termos_possiveis');
+termos(3) = np;
+
+l = 2;
+nu = 2;
+ny = 2;
+ne = 2;
+
+run('Nro_termos_possiveis');
+termos(4) = np;
+
+l = 3;
+nu = 1;
+ny = 1;
+ne = 1;
+
+run('Nro_termos_possiveis');
+termos(5) = np;
+
+l = 3;
+nu = 2;
+ny = 2;
+ne = 2;
+
+run('Nro_termos_possiveis');
+termos(5) = np;
+
+l = 4;
+nu = 2;
+ny = 2;
+ne = 2;
+
+run('Nro_termos_possiveis');
+termos(5) = np;
+

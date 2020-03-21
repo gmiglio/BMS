@@ -1,0 +1,478 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>D_ApresentaDados</title><meta name="generator" content="MATLAB 8.6"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-12-13"><meta name="DC.source" content="D_ApresentaDados.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="comment">% Guilherme Miglio Doxa</span>
+clear <span class="string">all</span>; clc; close <span class="string">all</span>;
+
+<span class="comment">% Amostra 1 - OK</span>
+<span class="comment">% cd('A_Cap_72_Bateria_A_Amostra_1');</span>
+<span class="comment">% load('Bat_A_72_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 2</span>
+<span class="comment">% cd('B_Cap_72_Bateria_A_Amostra_2');</span>
+<span class="comment">% load('Bat_A_72_Amostra_2.mat');</span>
+
+<span class="comment">% Amostra 3</span>
+<span class="comment">% cd('C_Cap_72_Bateria_A_Amostra_3');</span>
+<span class="comment">% load('Bat_A_72_Amostra_3.mat');</span>
+
+<span class="comment">% Amostra 4</span>
+<span class="comment">% cd('D_Cap_72_Bateria_B_Amostra_1');</span>
+<span class="comment">% load('Bat_B_72_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 5</span>
+<span class="comment">% cd('E_Cap_72_Bateria_B_Amostra_2');</span>
+<span class="comment">% load('Bat_B_72_Amostra_2.mat');</span>
+
+<span class="comment">% Amostra 6</span>
+<span class="comment">% cd('F_Cap_72_Bateria_B_Amostra_3');</span>
+<span class="comment">% load('Bat_B_72_Amostra_3.mat');</span>
+
+<span class="comment">% Amostra 7</span>
+<span class="comment">% cd('G_Cap_72_Bateria_C_Amostra_1');</span>
+<span class="comment">% load('Bat_C_72_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 8</span>
+<span class="comment">% cd('H_Cap_72_Bateria_C_Amostra_2');</span>
+<span class="comment">% load('Bat_C_72_Amostra_2.mat');</span>
+
+<span class="comment">% Amostra 9</span>
+<span class="comment">% cd('I_Cap_72_Bateria_C_Amostra_3');</span>
+<span class="comment">% load('Bat_C_72_Amostra_3.mat');</span>
+
+<span class="comment">% Amostra 10</span>
+<span class="comment">% cd('J_Cap_60_Bateria_A_Amostra_1');</span>
+<span class="comment">% load('Bat_A_60_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 11</span>
+<span class="comment">% cd('K_Cap_60_Bateria_A_Amostra_2');</span>
+<span class="comment">% load('Bat_A_60_Amostra_2.mat');</span>
+
+<span class="comment">% Amostra 12</span>
+<span class="comment">% cd('L_Cap_60_Bateria_A_Amostra_3');</span>
+<span class="comment">% load('Bat_A_60_Amostra_3.mat');</span>
+
+<span class="comment">% Amostra 13</span>
+<span class="comment">% cd('M_Cap_60_Bateria_B_Amostra_1');</span>
+<span class="comment">% load('Bat_B_60_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 14</span>
+cd(<span class="string">'N_Cap_60_Bateria_B_Amostra_2'</span>);
+load(<span class="string">'Bat_B_60_Amostra_2.mat'</span>);
+
+<span class="comment">% Amostra 15</span>
+<span class="comment">% cd('O_Cap_60_Bateria_B_Amostra_3');</span>
+<span class="comment">% load('Bat_B_60_Amostra_3.mat');</span>
+
+<span class="comment">% Amostra 16</span>
+<span class="comment">% cd('P_Cap_60_Bateria_C_Amostra_1');</span>
+<span class="comment">% load('Bat_C_60_Amostra_1.mat');</span>
+
+<span class="comment">% Amostra 17</span>
+<span class="comment">% cd('Q_Cap_60_Bateria_C_Amostra_2');</span>
+<span class="comment">% load('Bat_C_60_Amostra_2.mat');</span>
+
+<span class="comment">% Amostra 18</span>
+<span class="comment">% cd('R_Cap_60_Bateria_C_Amostra_3');</span>
+<span class="comment">% load('Bat_C_60_Amostra_3.mat');</span>
+
+<span class="comment">% Carrega os dados dos arquivos;</span>
+load(<span class="string">'Ceraolo_SoC.mat'</span>);
+
+<span class="comment">% Carrega os dados dos arquivos;</span>
+load(<span class="string">'Shephard_SoC_Simulado.mat'</span>);
+
+<span class="comment">% N&uacute;mero de amostras</span>
+N = 15000;
+CAPACIDADE = 60; <span class="comment">% Ah</span>
+<span class="comment">% Coulomb Counting</span>
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+<span class="comment">% Axis to hours</span>
+<span class="keyword">for</span> i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+<span class="keyword">end</span>
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = uint8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+<span class="keyword">for</span> i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(uint32(i*Quant+1):uint32(Quant*(i+1))));
+<span class="keyword">end</span>
+
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = uint8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+<span class="keyword">for</span> i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(uint32(i*Quant+1):uint32(Quant*(i+1))));
+<span class="keyword">end</span>
+
+figure;
+plot(y_Shephard, <span class="string">'g'</span>,<span class="string">'LineWidth'</span>,1);
+hold <span class="string">on</span>;
+
+plot(Est_Carga(1:15000), <span class="string">'r'</span>,<span class="string">'LineWidth'</span>,1);
+hold <span class="string">on</span>;
+
+plot(uint32(Bat_CC), <span class="string">'m'</span>,<span class="string">'LineWidth'</span>,1);
+hold <span class="string">on</span>;
+
+plot(y_Ceraolo, <span class="string">'b'</span>,<span class="string">'LineWidth'</span>,1);
+
+legend(<span class="string">'Modelo de Shephard'</span>, <span class="string">'IBS'</span>, <span class="string">'Coulomb Couting'</span>, <span class="string">'Modelo de Ceraolo'</span> );
+ylabel(<span class="string">'Estado de Carga(%)'</span>);
+xlabel(<span class="string">'Tempo(s)'</span>);
+title(<span class="string">'Compara&ccedil;&atilde;o dos valores do estado de Carga'</span>);
+grid <span class="string">on</span>;
+
+
+figure;
+time = 1:1:N;
+<span class="comment">% ylabels = {{'Estado de Carga(%)'}, {'Tens&atilde;o (V)'}, {'Temperatura (&ordm;C)'}};</span>
+<span class="comment">%  [ax, hlines] = plotyyy(time, SoC.Data(time), time, Tensao.Data(time), time, Temperatura.Data(time), ylabels);</span>
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+
+<span class="comment">%style the plot</span>
+set(H1,<span class="string">'Color'</span>,<span class="string">'r'</span>,<span class="string">'LineWidth'</span>,1);
+set(H2,<span class="string">'Color'</span>,<span class="string">'b'</span>,<span class="string">'LineWidth'</span>,1);
+
+set(AX(1),<span class="string">'YColor'</span>,<span class="string">'r'</span>);
+set(AX(2),<span class="string">'YColor'</span>,<span class="string">'b'</span>);
+
+<span class="comment">%x-axis and y-axis labels</span>
+set(get(AX(1),<span class="string">'Ylabel'</span>),<span class="string">'String'</span>,<span class="string">'Estado de Carga (%)'</span>);
+set(get(AX(2),<span class="string">'Ylabel'</span>),<span class="string">'String'</span>,<span class="string">'Corrente'</span>);
+
+
+<span class="comment">%add legend</span>
+leg = legend(<span class="string">'SoC'</span>,<span class="string">'Tens&atilde;o'</span>, <span class="string">'Location'</span>, <span class="string">'NorthWest'</span>);
+set(leg);
+
+set(get(AX(1),<span class="string">'Xlabel'</span>),<span class="string">'String'</span>,<span class="string">'Tempo (s)'</span>);
+set(get(AX(2),<span class="string">'Ylabel'</span>),<span class="string">'String'</span>,<span class="string">'Corrente'</span>);
+
+title(<span class="string">'Corrente e Estado de Carga ao longo do tempo'</span>);
+
+<span class="comment">%grid</span>
+grid <span class="string">on</span>;
+
+
+<span class="comment">% Calculo do Erro M&eacute;dio Quadr&aacute;tico</span>
+Quantidade = length(Corrente);
+
+EMQ_1 = abs(y_Ceraolo - Est_Carga);
+EMQ_2 = abs(y_Shephard - Est_Carga);
+EMQ_3 = uint8(abs(Bat_CC - Est_Carga));
+
+figure;
+plot(1:1:15000, EMQ_1,<span class="string">'g'</span>,<span class="string">'LineWidth'</span>,1);
+hold <span class="string">on</span>;
+plot(1:1:15000, EMQ_2,<span class="string">'b'</span>,<span class="string">'LineWidth'</span>,1);
+hold <span class="string">on</span>;
+plot(1:1:15000, EMQ_3,<span class="string">'r'</span>,<span class="string">'LineWidth'</span>,1);
+
+legend(<span class="string">'Erro Ceraolo'</span>, <span class="string">'Erro Shepherd'</span>, <span class="string">'Erro Coulomb Counting'</span>);
+
+title(<span class="string">'Diferen&ccedil;a do Estado de Carga dos Modelos em rela&ccedil;&atilde;o ao IBS'</span>);
+
+EMQ_1 = sum(EMQ_1.^2)/length(EMQ_1);
+EMQ_2 = sum(EMQ_2.^2)/length(EMQ_2);
+EMQ_3 = sum(EMQ_3.^2)/length(EMQ_3);
+
+fprintf(<span class="string">'Erro M&eacute;dio Quadr&aacute;tico - Ceraolo  = %6.2f\n'</span>, EMQ_1);
+fprintf(<span class="string">'Erro M&eacute;dio Quadr&aacute;tico - Shepherd = %6.2f\n'</span>, EMQ_2);
+fprintf(<span class="string">'Erro M&eacute;dio Quadr&aacute;tico - Coulomb Counting = %6.2f\n'</span>, EMQ_3);
+</pre><pre class="codeoutput">                   Box: {'on'  'off'}
+            BusyAction: {'queue'  'cancel'}
+         ButtonDownFcn: {}
+              Children: {}
+                 Color: {1x0 cell}
+             CreateFcn: {}
+             DeleteFcn: {}
+             EdgeColor: {1x0 cell}
+             FontAngle: {'normal'  'italic'}
+              FontName: {}
+              FontSize: {}
+            FontWeight: {'normal'  'bold'}
+      HandleVisibility: {'on'  'callback'  'off'}
+               HitTest: {'on'  'off'}
+           Interpreter: {'none'  'tex'  'latex'}
+         Interruptible: {'on'  'off'}
+             LineWidth: {}
+              Location: {1x19 cell}
+           Orientation: {'horizontal'  'vertical'}
+                Parent: {}
+         PickableParts: {'visible'  'none'  'all'}
+              Position: {}
+              Selected: {'on'  'off'}
+    SelectionHighlight: {'on'  'off'}
+                String: {}
+                   Tag: {}
+             TextColor: {1x0 cell}
+         UIContextMenu: {}
+                 Units: {1x6 cell}
+              UserData: {}
+               Visible: {'on'  'off'}
+
+Erro M&eacute;dio Quadr&aacute;tico - Ceraolo  =   2.28
+Erro M&eacute;dio Quadr&aacute;tico - Shepherd =   2.51
+Erro M&eacute;dio Quadr&aacute;tico - Coulomb Counting =   1.74
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_01.png" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_02.png" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_03.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% Guilherme Miglio Doxa
+clear all; clc; close all;
+
+% Amostra 1 - OK
+% cd('A_Cap_72_Bateria_A_Amostra_1');
+% load('Bat_A_72_Amostra_1.mat');
+
+% Amostra 2
+% cd('B_Cap_72_Bateria_A_Amostra_2');
+% load('Bat_A_72_Amostra_2.mat');
+
+% Amostra 3
+% cd('C_Cap_72_Bateria_A_Amostra_3');
+% load('Bat_A_72_Amostra_3.mat');
+
+% Amostra 4
+% cd('D_Cap_72_Bateria_B_Amostra_1');
+% load('Bat_B_72_Amostra_1.mat');
+
+% Amostra 5
+% cd('E_Cap_72_Bateria_B_Amostra_2');
+% load('Bat_B_72_Amostra_2.mat');
+
+% Amostra 6
+% cd('F_Cap_72_Bateria_B_Amostra_3');
+% load('Bat_B_72_Amostra_3.mat');
+
+% Amostra 7
+% cd('G_Cap_72_Bateria_C_Amostra_1');
+% load('Bat_C_72_Amostra_1.mat');
+
+% Amostra 8
+% cd('H_Cap_72_Bateria_C_Amostra_2');
+% load('Bat_C_72_Amostra_2.mat');
+
+% Amostra 9
+% cd('I_Cap_72_Bateria_C_Amostra_3');
+% load('Bat_C_72_Amostra_3.mat');
+
+% Amostra 10
+% cd('J_Cap_60_Bateria_A_Amostra_1');
+% load('Bat_A_60_Amostra_1.mat');
+
+% Amostra 11
+% cd('K_Cap_60_Bateria_A_Amostra_2');
+% load('Bat_A_60_Amostra_2.mat');
+
+% Amostra 12
+% cd('L_Cap_60_Bateria_A_Amostra_3');
+% load('Bat_A_60_Amostra_3.mat');
+
+% Amostra 13
+% cd('M_Cap_60_Bateria_B_Amostra_1');
+% load('Bat_B_60_Amostra_1.mat');
+
+% Amostra 14
+cd('N_Cap_60_Bateria_B_Amostra_2');
+load('Bat_B_60_Amostra_2.mat');
+
+% Amostra 15
+% cd('O_Cap_60_Bateria_B_Amostra_3');
+% load('Bat_B_60_Amostra_3.mat');
+
+% Amostra 16
+% cd('P_Cap_60_Bateria_C_Amostra_1');
+% load('Bat_C_60_Amostra_1.mat');
+
+% Amostra 17
+% cd('Q_Cap_60_Bateria_C_Amostra_2');
+% load('Bat_C_60_Amostra_2.mat');
+
+% Amostra 18
+% cd('R_Cap_60_Bateria_C_Amostra_3');
+% load('Bat_C_60_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = uint8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(uint32(i*Quant+1):uint32(Quant*(i+1))));
+end
+
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = uint8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(uint32(i*Quant+1):uint32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Comparação dos valores do estado de Carga');
+grid on;
+
+
+figure;
+time = 1:1:N;
+% ylabels = {{'Estado de Carga(%)'}, {'Tensão (V)'}, {'Temperatura (ºC)'}};
+%  [ax, hlines] = plotyyy(time, SoC.Data(time), time, Tensao.Data(time), time, Temperatura.Data(time), ylabels);
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+
+%style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+
+%x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+
+
+%add legend
+leg = legend('SoC','Tensão', 'Location', 'NorthWest');
+set(leg);
+
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+set(get(AX(2),'Ylabel'),'String','Corrente'); 
+
+title('Corrente e Estado de Carga ao longo do tempo');
+
+%grid
+grid on;
+
+
+% Calculo do Erro Médio Quadrático
+Quantidade = length(Corrente);
+
+EMQ_1 = abs(y_Ceraolo - Est_Carga);
+EMQ_2 = abs(y_Shephard - Est_Carga);
+EMQ_3 = uint8(abs(Bat_CC - Est_Carga));
+
+figure;
+plot(1:1:15000, EMQ_1,'g','LineWidth',1);
+hold on;
+plot(1:1:15000, EMQ_2,'b','LineWidth',1);
+hold on;
+plot(1:1:15000, EMQ_3,'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Diferença do Estado de Carga dos Modelos em relação ao IBS');
+
+EMQ_1 = sum(EMQ_1.^2)/length(EMQ_1);
+EMQ_2 = sum(EMQ_2.^2)/length(EMQ_2);
+EMQ_3 = sum(EMQ_3.^2)/length(EMQ_3);
+
+fprintf('Erro Médio Quadrático - Ceraolo  = %6.2f\n', EMQ_1); 
+fprintf('Erro Médio Quadrático - Shepherd = %6.2f\n', EMQ_2);
+fprintf('Erro Médio Quadrático - Coulomb Counting = %6.2f\n', EMQ_3);
+
+##### SOURCE END #####
+--></body></html>
