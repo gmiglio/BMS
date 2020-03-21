@@ -1,0 +1,2248 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>D_ApresentaDados</title><meta name="generator" content="MATLAB 8.6"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-12-14"><meta name="DC.source" content="D_ApresentaDados.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeoutput">Teste de Baterias de 72 Ah 
+
+       Bateria A 
+
+</pre><p>Amosttra1 Amostra 1 - OK</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   6.70
+                     Modelo de Shephard:   0.56
+                     Modelo Counting Coulomb:   0.25
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_01.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_02.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_03.bmp" alt=""> <p>Amostra 2</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   0.74
+                     Modelo de Shephard:   0.19
+                     Modelo Counting Coulomb:   0.25
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_04.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_05.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_06.bmp" alt=""> <p>Amostra 3</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   0.64
+                     Modelo de Shephard:   1.46
+                     Modelo Counting Coulomb:   0.42
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_07.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_08.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_09.bmp" alt=""> <pre class="codeoutput">       Bateria B 
+
+              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   1.40
+                     Modelo de Shephard:   0.77
+                     Modelo Counting Coulomb:   1.02
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_10.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_11.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_12.bmp" alt=""> <p>Amostra 5</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   2.02
+                     Modelo de Shephard:   3.20
+                     Modelo Counting Coulomb:   0.26
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_13.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_14.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_15.bmp" alt=""> <pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   8.78
+                     Modelo de Shephard:   8.49
+                     Modelo Counting Coulomb:   8.87
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_16.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_17.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_18.bmp" alt=""> <pre class="codeoutput">       Bateria C 
+
+              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   0.92
+                     Modelo de Shephard:   0.93
+                     Modelo Counting Coulomb:   1.26
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_19.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_20.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_21.bmp" alt=""> <p>Amostra 8</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   1.63
+                     Modelo de Shephard:   1.11
+                     Modelo Counting Coulomb:   1.82
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_22.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_23.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_24.bmp" alt=""> <p>Amostra 9</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   1.08
+                     Modelo de Shephard:   2.42
+                     Modelo Counting Coulomb:   2.10
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_25.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_26.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_27.bmp" alt=""> <pre class="codeoutput">Teste de Baterias de 60 Ah 
+
+       Bateria A 
+
+              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   1.41
+                     Modelo de Shephard:   0.67
+                     Modelo Counting Coulomb:   0.17
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_28.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_29.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_30.bmp" alt=""> <p>Amostra 11</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   2.43
+                     Modelo de Shephard:   2.35
+                     Modelo Counting Coulomb:   0.78
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_31.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_32.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_33.bmp" alt=""> <p>Amostra12</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   3.15
+                     Modelo de Shephard:   3.27
+                     Modelo Counting Coulomb:   0.49
+       Bateria B 
+
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_34.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_35.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_36.bmp" alt=""> <p>Amostra 13</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   2.97
+                     Modelo de Shephard:   2.87
+                     Modelo Counting Coulomb:   2.67
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_37.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_38.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_39.bmp" alt=""> <p>Amostra 14</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   2.28
+                     Modelo de Shephard:   0.41
+                     Modelo Counting Coulomb:   0.40
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_40.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_41.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_42.bmp" alt=""> <p>Amostra 15</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   1.08
+                     Modelo de Shephard:   0.97
+                     Modelo Counting Coulomb:   0.35
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_43.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_44.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_45.bmp" alt=""> <pre class="codeoutput">       Bateria C 
+
+              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 1 
+                     Modelo de Ceraolo:   1.07
+                     Modelo de Shephard:   0.72
+                     Modelo Counting Coulomb:   0.51
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_46.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_47.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_48.bmp" alt=""> <p>Amostra 17</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 2 
+                     Modelo de Ceraolo:   0.64
+                     Modelo de Shephard:   0.20
+                     Modelo Counting Coulomb:   0.13
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_49.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_50.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_51.bmp" alt=""> <p>Amostra 18</p><pre class="codeoutput">              Vari&acirc;ncia da diferen&ccedil;a para os valores do IBS para a Amostra 3 
+                     Modelo de Ceraolo:   0.64
+                     Modelo de Shephard:   1.83
+                     Modelo Counting Coulomb:   0.37
+</pre><img vspace="5" hspace="5" src="D_ApresentaDados_52.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_53.bmp" alt=""> <img vspace="5" hspace="5" src="D_ApresentaDados_54.bmp" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+% Guilherme Miglio Doxa
+clear all; clc; close all;
+
+Variacao = [];
+
+fprintf('Teste de Baterias de 72 Ah \n\n');
+
+fprintf('       Bateria A \n\n');
+
+%%
+% Amosttra1
+% Amostra 1 - OK
+cd('A_Cap_72_Bateria_A_Amostra_1');
+load('Bat_A_72_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|72Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|72Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|72Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra1
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{1,1} = '72';
+Variacao{1,2} = 'A';
+Variacao{1,3} = '1';
+
+Variacao{1,4} = Var_Ceraolo;
+Variacao{1,5} = Var_Shephard;
+Variacao{1,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 2
+cd('B_Cap_72_Bateria_A_Amostra_2');
+load('Bat_A_72_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|72Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|72Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|72Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra2
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{2,1} = '72';
+Variacao{2,2} = 'A';
+Variacao{2,3} = '2';
+
+Variacao{2,4} = Var_Ceraolo;
+Variacao{2,5} = Var_Shephard;
+Variacao{2,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 3
+cd('C_Cap_72_Bateria_A_Amostra_3');
+load('Bat_A_72_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|72Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|72Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|72Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra3
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{3,1} = '72';
+Variacao{3,2} = 'A';
+Variacao{3,3} = '3';
+
+Variacao{3,4} = Var_Ceraolo;
+Variacao{3,5} = Var_Shephard;
+Variacao{3,6} = Var_CC;
+
+cd('..');
+
+%%
+fprintf('       Bateria B \n\n');
+
+% Amostra 4
+cd('D_Cap_72_Bateria_B_Amostra_1');
+load('Bat_B_72_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|72Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|72Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|72Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra4
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{4,1} = '72';
+Variacao{4,2} = 'B';
+Variacao{4,3} = '1';
+
+Variacao{4,4} = Var_Ceraolo;
+Variacao{4,5} = Var_Shephard;
+Variacao{4,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 5
+cd('E_Cap_72_Bateria_B_Amostra_2');
+load('Bat_B_72_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|72Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|72Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|72Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra5
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{5,1} = '72';
+Variacao{5,2} = 'B';
+Variacao{5,3} = '2';
+
+Variacao{5,4} = Var_Ceraolo;
+Variacao{5,5} = Var_Shephard;
+Variacao{5,6} = Var_CC;
+
+cd('..');
+
+%%
+
+% Amostra 6
+cd('F_Cap_72_Bateria_B_Amostra_3');
+load('Bat_B_72_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|72Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|72Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|72Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra6
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{6,1} = '72';
+Variacao{6,2} = 'B';
+Variacao{6,3} = '3';
+
+Variacao{6,4} = Var_Ceraolo;
+Variacao{6,5} = Var_Shephard;
+Variacao{6,6} = Var_CC;
+
+cd('..');
+%%
+fprintf('       Bateria C \n\n');
+
+% Amostra 7
+cd('G_Cap_72_Bateria_C_Amostra_1');
+load('Bat_C_72_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|72Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|72Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|72Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra7
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{7,1} = '72';
+Variacao{7,2} = 'C';
+Variacao{7,3} = '1';
+
+Variacao{7,4} = Var_Ceraolo;
+Variacao{7,5} = Var_Shephard;
+Variacao{7,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 8
+cd('H_Cap_72_Bateria_C_Amostra_2');
+load('Bat_C_72_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|72Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|72Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|72Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra8
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{8,1} = '72';
+Variacao{8,2} = 'C';
+Variacao{8,3} = '2';
+
+Variacao{8,4} = Var_Ceraolo;
+Variacao{8,5} = Var_Shephard;
+Variacao{8,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 9
+cd('I_Cap_72_Bateria_C_Amostra_3');
+load('Bat_C_72_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 72; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|72Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|72Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|72Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra9
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{9,1} = '72';
+Variacao{9,2} = 'C';
+Variacao{9,3} = '3';
+
+Variacao{9,4} = Var_Ceraolo;
+Variacao{9,5} = Var_Shephard;
+Variacao{9,6} = Var_CC;
+
+cd('..');
+
+%%
+fprintf('Teste de Baterias de 60 Ah \n\n');
+fprintf('       Bateria A \n\n');
+
+% Amostra 10
+cd('J_Cap_60_Bateria_A_Amostra_1');
+load('Bat_A_60_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|60Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|60Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|60Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra10
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{10,1} = '60';
+Variacao{10,2} = 'A';
+Variacao{10,3} = '1';
+
+Variacao{10,4} = Var_Ceraolo;
+Variacao{10,5} = Var_Shephard;
+Variacao{10,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 11
+cd('K_Cap_60_Bateria_A_Amostra_2');
+load('Bat_A_60_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|60Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|60Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|60Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra11
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{11,1} = '60';
+Variacao{11,2} = 'A';
+Variacao{11,3} = '2';
+
+Variacao{11,4} = Var_Ceraolo;
+Variacao{11,5} = Var_Shephard;
+Variacao{11,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra12
+cd('L_Cap_60_Bateria_A_Amostra_3');
+load('Bat_A_60_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria A|60Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria A|60Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria A|60Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra12
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{12,1} = '60';
+Variacao{12,2} = 'A';
+Variacao{12,3} = '3';
+
+Variacao{12,4} = Var_Ceraolo;
+Variacao{12,5} = Var_Shephard;
+Variacao{12,6} = Var_CC;
+
+cd('..');
+
+fprintf('       Bateria B \n\n');
+
+%%
+% Amostra 13
+cd('M_Cap_60_Bateria_B_Amostra_1');
+load('Bat_B_60_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|60Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|60Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|60Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra13
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{13,1} = '60';
+Variacao{13,2} = 'B';
+Variacao{13,3} = '1';
+
+Variacao{13,4} = Var_Ceraolo;
+Variacao{13,5} = Var_Shephard;
+Variacao{13,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 14
+cd('N_Cap_60_Bateria_B_Amostra_2');
+load('Bat_B_60_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|60Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|60Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|60Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra14
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{14,1} = '60';
+Variacao{14,2} = 'B';
+Variacao{14,3} = '2';
+
+Variacao{14,4} = Var_Ceraolo;
+Variacao{14,5} = Var_Shephard;
+Variacao{14,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 15
+cd('O_Cap_60_Bateria_B_Amostra_3');
+load('Bat_B_60_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria B|60Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria B|60Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria B|60Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra15
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{15,1} = '60';
+Variacao{15,2} = 'B';
+Variacao{15,3} = '3';
+
+Variacao{15,4} = Var_Ceraolo;
+Variacao{15,5} = Var_Shephard;
+Variacao{15,6} = Var_CC;
+
+cd('..');
+
+%%
+fprintf('       Bateria C \n\n');
+% Amostra 16
+cd('P_Cap_60_Bateria_C_Amostra_1');
+load('Bat_C_60_Amostra_1.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|60Ah|Amostra 1 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|60Ah|Amostra 1 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|60Ah|Amostra 1 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra16
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 1 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{16,1} = '60';
+Variacao{16,2} = 'C';
+Variacao{16,3} = '1';
+
+Variacao{16,4} = Var_Ceraolo;
+Variacao{16,5} = Var_Shephard;
+Variacao{16,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 17
+cd('Q_Cap_60_Bateria_C_Amostra_2');
+load('Bat_C_60_Amostra_2.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|60Ah|Amostra 2 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|60Ah|Amostra 2 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|60Ah|Amostra 2 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra17
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 2 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+Variacao{17,1} = '60';
+Variacao{17,2} = 'C';
+Variacao{17,3} = '2';
+
+Variacao{17,4} = Var_Ceraolo;
+Variacao{17,5} = Var_Shephard;
+Variacao{17,6} = Var_CC;
+
+cd('..');
+
+%%
+% Amostra 18
+cd('R_Cap_60_Bateria_C_Amostra_3');
+load('Bat_C_60_Amostra_3.mat');
+
+% Carrega os dados dos arquivos;
+load('Ceraolo_SoC.mat');
+% Carrega os dados dos arquivos;
+load('Shephard_SoC_Simulado.mat');
+% Número de amostras
+N = 15000;
+CAPACIDADE = 60; % Ah
+% Coulomb Counting
+Bat_CC = zeros(N,1);
+Bat_CC(1) = Est_Carga(1);
+cte = 100/(CAPACIDADE*3600);
+
+% Axis to hours
+for i=2:1:N
+    Bat_CC(i) = Bat_CC(i-1) + cte*Corrente(i);
+end
+
+Quant = length(Ceraolo_SoC.Data)/N;
+y_af_Ceraolo = int8(Ceraolo_SoC.Data);
+y_Ceraolo = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Ceraolo(i+1) =  mean(y_af_Ceraolo(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+Quant = length(Shephard_SoC_Simulado.Data)/N;
+y_af_Shephard = int8(Shephard_SoC_Simulado.Data);
+y_Shephard = zeros(N, 1);
+for i=0:1:(N-1)
+    y_Shephard(i+1) = mean(y_af_Shephard(int32(i*Quant+1):int32(Quant*(i+1))));
+end
+
+figure;
+plot(y_Shephard, 'g','LineWidth',1);
+hold on;
+
+plot(Est_Carga(1:15000), 'r','LineWidth',1);
+hold on;
+
+plot(uint32(Bat_CC), 'm','LineWidth',1);
+hold on;
+
+plot(y_Ceraolo, 'b','LineWidth',1); 
+
+legend('Modelo de Shephard', 'IBS', 'Coulomb Couting', 'Modelo de Ceraolo' );
+ylabel('Estado de Carga(%)');
+xlabel('Tempo(s)');
+title('Bateria C|60Ah|Amostra 3 - Estado de Carga por Modelos');
+grid on;
+
+
+figure;
+time = 1:1:N;
+
+[AX, H1, H2] = plotyy(time, Est_Carga(time), time, Corrente(time));
+% 
+% %style the plot
+set(H1,'Color','r','LineWidth',1);
+set(H2,'Color','b','LineWidth',1);
+% 
+set(AX(1),'YColor','r');
+set(AX(2),'YColor','b');
+% 
+% %x-axis and y-axis labels
+set(get(AX(1),'Ylabel'),'String','Estado de Carga (%)');
+set(get(AX(2),'Ylabel'),'String','Corrente');
+%  
+set(get(AX(1),'Xlabel'),'String','Tempo (s)');
+% set(get(AX(2),'Ylabel'),'String','Corrente'); 
+% 
+title('Bateria C|60Ah|Amostra 3 - Corrente e Estado de Carga');
+% 
+% %grid
+grid on;
+
+Erro_Ceraolo = y_Ceraolo - Est_Carga;
+Erro_Shephard = y_Shephard - Est_Carga;
+Erro_CC = int8(Bat_CC-Est_Carga);
+
+figure;
+plot(1:1:15000, abs(Erro_Ceraolo),'g','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_Shephard),'b','LineWidth',1);
+hold on;
+plot(1:1:15000, abs(Erro_CC),'r','LineWidth',1);
+
+legend('Erro Ceraolo', 'Erro Shepherd', 'Erro Coulomb Counting');
+
+title('Bateria C|60Ah|Amostra 3 - Diferença do Estado de Carga em relação ao IBS');
+
+Var_Ceraolo = var(Erro_Ceraolo);
+Var_Shephard = var(Erro_Shephard);
+Var_CC = var(double(Erro_CC));
+
+% Amostra18
+
+fprintf('              Variância da diferença para os valores do IBS para a Amostra 3 \n');
+fprintf('                     Modelo de Ceraolo: %6.2f\n', Var_Ceraolo);
+fprintf('                     Modelo de Shephard: %6.2f\n', Var_Shephard);
+fprintf('                     Modelo Counting Coulomb: %6.2f\n', Var_CC);
+
+
+Variacao{18,1} = '60';
+Variacao{18,2} = 'C';
+Variacao{18,3} = '3';
+
+Variacao{18,4} = Var_Ceraolo;
+Variacao{18,5} = Var_Shephard;
+Variacao{18,6} = Var_CC;
+
+##### SOURCE END #####
+--></body></html>
